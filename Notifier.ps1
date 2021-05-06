@@ -7,7 +7,8 @@ $emailSmtpUser = "myemail@gmail.com"
 $emailSmtpPass = "password"
 
 # INIT Mail
-$emailSendTo = "receiver";
+#Replace receiver@mail.com
+$emailSendTo = "receiver@mail.com";
 $emailMessage = New-Object System.Net.Mail.MailMessage
 $emailMessage.From = "Notifier <$emailSmtpUser>"
 $emailMessage.To.Add( $emailSendTo  )
